@@ -141,7 +141,7 @@ export function ContactSection() {
                 as="a"
                 href="mailto:aliabdiyev000@gmail.com"
                 borderRadius="0.75rem"
-                className="text-sm font-medium h-12 px-6"
+                className="text-sm font-medium h-auto px-6"
                 containerClassName="sm:w-auto w-full"
               >
                 <Mail className="h-4 w-4 mr-2" />
