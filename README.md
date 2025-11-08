@@ -1,36 +1,250 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website - Ali Abdiyev
 
-## Getting Started
+A modern, responsive portfolio website built with cutting-edge technologies and stunning UI effects.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?style=flat-square&logo=tailwind-css)
+![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react)
 
+## ✨ Features
+
+### 🎨 Modern UI Components
+- **Aceternity UI Integration**: Premium components including:
+  - Spotlight effects
+  - 3D card animations
+  - Text generation effects
+  - Moving border buttons
+  - Bento grid layouts
+  - Background beams
+  
+- **shadcn/ui**: 40+ beautifully designed components
+- **Dark/Light Mode**: Seamless theme switching with next-themes
+- **Smooth Animations**: Framer Motion powered transitions
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+
+### 📱 Sections
+
+1. **Hero Section**
+   - Spotlight animation
+   - Text generation effect
+   - Grid background pattern
+   - Social media links
+   - Smooth scroll indicators
+
+2. **About Section**
+   - Professional bio
+   - Highlight cards with statistics
+   - Achievement metrics
+   - Company information
+
+3. **Skills Section**
+   - Tabbed interface for different tech stacks
+   - Frontend, Backend, Database, DevOps categories
+   - Skill level indicators (Expert/Advanced/Intermediate)
+   - Bento grid for services
+   - Hover effects and animations
+
+4. **Projects Section**
+   - 3D card effects
+   - Featured projects showcase
+   - GitHub and live demo links
+   - Tech stack tags
+   - Show more/less functionality
+
+5. **Contact Section**
+   - Moving border button for email
+   - Multiple contact methods
+   - Social media integration
+   - Professional CTA card
+
+6. **Navigation**
+   - Sticky navbar with glassmorphism
+   - Mobile-responsive menu
+   - Smooth scroll behavior
+   - Theme toggle integration
+
+### 🛠️ Tech Stack
+
+#### Frontend
+- **Next.js 16** - React framework with App Router
+- **React 19** - Latest React features
+- **TypeScript** - Type-safe development
+- **Tailwind CSS 4** - Utility-first styling
+- **Framer Motion** - Animation library
+
+#### UI Components
+- **shadcn/ui** - Component library
+- **Aceternity UI** - Premium animated components
+- **Radix UI** - Headless UI primitives
+- **Lucide React** - Icon library
+
+#### Development Tools
+- **Biome** - Fast linter and formatter
+- **next-themes** - Theme management
+- **class-variance-authority** - Component variants
+- **tailwind-merge** - Classname merging utility
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or pnpm package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Abdiev003/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+portfolio/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx          # Root layout with providers
+│   │   ├── page.tsx            # Home page
+│   │   └── globals.css         # Global styles & animations
+│   ├── components/
+│   │   ├── ui/                 # shadcn/ui & Aceternity components
+│   │   │   ├── spotlight.tsx
+│   │   │   ├── text-generate-effect.tsx
+│   │   │   ├── moving-border.tsx
+│   │   │   ├── bento-grid.tsx
+│   │   │   ├── 3d-card.tsx
+│   │   │   └── ... (40+ more)
+│   │   ├── sections/           # Page sections
+│   │   │   ├── hero-section.tsx
+│   │   │   ├── about-section.tsx
+│   │   │   ├── skills-section.tsx
+│   │   │   ├── projects-section.tsx
+│   │   │   └── contact-section.tsx
+│   │   ├── navbar.tsx
+│   │   ├── footer.tsx
+│   │   ├── theme-provider.tsx
+│   │   └── theme-toggle.tsx
+│   └── lib/
+│       └── utils.ts            # Utility functions
+├── public/                     # Static assets
+├── components.json             # shadcn/ui config
+├── tailwind.config.js          # Tailwind configuration
+├── tsconfig.json               # TypeScript config
+└── package.json
+```
 
-## Learn More
+## 🎨 Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Update Personal Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Contact Details**: Update email and social links in:
+   - `src/components/sections/hero-section.tsx`
+   - `src/components/sections/contact-section.tsx`
+   - `src/components/footer.tsx`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Projects**: Edit the projects array in:
+   - `src/components/sections/projects-section.tsx`
 
-## Deploy on Vercel
+3. **Skills**: Modify skill categories in:
+   - `src/components/sections/skills-section.tsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **About**: Update bio and achievements in:
+   - `src/components/sections/about-section.tsx`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Theme Customization
+
+Edit CSS variables in `src/app/globals.css`:
+
+```css
+:root {
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  /* ... more variables */
+}
+```
+
+## 📦 Build & Deploy
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+### Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Abdiev003/portfolio)
+
+The easiest way to deploy is using [Vercel](https://vercel.com):
+
+1. Push your code to GitHub
+2. Import project to Vercel
+3. Deploy with one click
+
+### Deploy to Other Platforms
+
+This is a standard Next.js application and can be deployed to:
+- **Netlify**
+- **AWS Amplify**
+- **Railway**
+- **Render**
+- **DigitalOcean App Platform**
+
+## 🔧 Scripts
+
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run start    # Start production server
+npm run lint     # Run Biome linter
+npm run format   # Format code with Biome
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 👤 Author
+
+**Ali Abdiyev**
+- Website: [quberts.com](https://quberts.com)
+- GitHub: [@Abdiev003](https://github.com/Abdiev003)
+- LinkedIn: [ali-abdiyev](https://linkedin.com/in/ali-abdiyev)
+- Email: aliabdiyev000@gmail.com
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Aceternity UI](https://ui.aceternity.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Radix UI](https://www.radix-ui.com/)
+
+---
+
+⭐ Star this repo if you like it! Built with ❤️ using Next.js and TypeScript.
