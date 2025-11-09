@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, Home, User, Code, FolderGit2, Mail } from "lucide-react";
+import { Menu, Home, User, Code, FolderGit2, Mail } from "lucide-react";
 
+import { CursorToggle } from "@/components/cursor-toggle";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
@@ -20,6 +21,7 @@ const navItems = [
   { name: "Home", href: "#home", icon: Home },
   { name: "About", href: "#about", icon: User },
   { name: "Skills", href: "#skills", icon: Code },
+  { name: "GitHub", href: "#github", icon: FolderGit2 },
   { name: "Projects", href: "#projects", icon: FolderGit2 },
   { name: "Contact", href: "#contact", icon: Mail },
 ];
@@ -77,13 +79,15 @@ export function Navbar() {
               {item.name}
             </Link>
           ))}
-          <div className="ml-2">
+          <div className="ml-2 flex items-center gap-1">
+            <CursorToggle />
             <ThemeToggle />
           </div>
         </div>
 
         {/* Mobile Navigation */}
-        <div className="flex md:hidden items-center gap-2">
+        <div className="flex md:hidden items-center gap-1">
+          <CursorToggle />
           <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>

@@ -17,9 +17,12 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
   - Moving border buttons
   - Bento grid layouts
   - Background beams
+  - Animated custom cursor
+  - Particle trail effects
   
 - **shadcn/ui**: 40+ beautifully designed components
 - **Dark/Light Mode**: Seamless theme switching with next-themes
+- **Custom Cursor**: Animated cursor with particle trail effects (toggleable)
 - **Smooth Animations**: Framer Motion powered transitions
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
 
@@ -45,20 +48,28 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
    - Bento grid for services
    - Hover effects and animations
 
-4. **Projects Section**
+4. **GitHub Stats & Activity**
+   - Real-time GitHub statistics (Stars, Forks, Repos, Followers)
+   - GitHub contribution stats card
+   - Most used languages chart
+   - Contribution streak counter 🔥
+   - Direct link to GitHub profile
+   - Animated stat cards with smooth transitions
+
+5. **Projects Section**
    - 3D card effects
    - Featured projects showcase
    - GitHub and live demo links
    - Tech stack tags
    - Show more/less functionality
 
-5. **Contact Section**
+6. **Contact Section**
    - Moving border button for email
    - Multiple contact methods
    - Social media integration
    - Professional CTA card
 
-6. **Navigation**
+7. **Navigation**
    - Sticky navbar with glassmorphism
    - Mobile-responsive menu
    - Smooth scroll behavior
@@ -72,6 +83,7 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
 - **TypeScript** - Type-safe development
 - **Tailwind CSS 4** - Utility-first styling
 - **Framer Motion** - Animation library
+- **Inter + JetBrains Mono** - Professional Google Fonts
 
 #### UI Components
 - **shadcn/ui** - Component library
@@ -132,13 +144,16 @@ portfolio/
 │   │   │   ├── moving-border.tsx
 │   │   │   ├── bento-grid.tsx
 │   │   │   ├── 3d-card.tsx
+│   │   │   ├── glowing-stars.tsx
+│   │   │   ├── meteors.tsx
 │   │   │   └── ... (40+ more)
-│   │   ├── sections/           # Page sections
-│   │   │   ├── hero-section.tsx
-│   │   │   ├── about-section.tsx
-│   │   │   ├── skills-section.tsx
-│   │   │   ├── projects-section.tsx
-│   │   │   └── contact-section.tsx
+    │   │   ├── sections/           # Page sections
+    │   │   │   ├── hero-section.tsx
+    │   │   │   ├── about-section.tsx
+    │   │   │   ├── skills-section.tsx
+    │   │   │   ├── github-section.tsx
+    │   │   │   ├── projects-section.tsx
+    │   │   │   └── contact-section.tsx
 │   │   ├── navbar.tsx
 │   │   ├── footer.tsx
 │   │   ├── theme-provider.tsx
@@ -146,6 +161,8 @@ portfolio/
 │   └── lib/
 │       └── utils.ts            # Utility functions
 ├── public/                     # Static assets
+│   ├── resume-ali-abdiyev-en.pdf  # Resume (English)
+│   └── README-CV.md            # CV upload instructions
 ├── components.json             # shadcn/ui config
 ├── tailwind.config.js          # Tailwind configuration
 ├── tsconfig.json               # TypeScript config
@@ -169,6 +186,9 @@ portfolio/
 
 4. **About**: Update bio and achievements in:
    - `src/components/sections/about-section.tsx`
+
+5. **Resume/CV**: Replace the PDF file in:
+   - `public/resume-ali-abdiyev-en.pdf` (see `public/README-CV.md` for details)
 
 ### Theme Customization
 

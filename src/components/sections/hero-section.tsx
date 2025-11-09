@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Download } from "lucide-react";
 
 import Sparkles from "@/components/ui/sparkles";
 import { Button } from "@/components/ui/button";
@@ -79,6 +79,21 @@ export function HeroSection() {
             asChild
           >
             <Link href="#contact">Get In Touch</Link>
+          </Button>
+          <Button
+            size="lg"
+            variant="ghost"
+            className="backdrop-blur-sm"
+            asChild
+          >
+            <a
+              href="/resume-ali-abdiyev-en.pdf"
+              download="Ali-Abdiyev-Resume.pdf"
+              className="flex items-center gap-2"
+            >
+              <Download className="h-4 w-4" />
+              <span className="hidden sm:inline">Resume</span>
+            </a>
           </Button>
         </div>
 

@@ -7,6 +7,8 @@ import {
   Github,
   Instagram,
   Facebook,
+  Download,
+  FileText,
 } from "lucide-react";
 
 import {
@@ -20,6 +22,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MovingBorderButton } from "@/components/ui/moving-border";
 import { Meteors } from "@/components/ui/meteors";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 const contactMethods = [
   {
@@ -84,6 +87,32 @@ export function ContactSection() {
             Have a project in mind or want to collaborate? Feel free to reach
             out!
           </p>
+
+          {/* Resume Download Buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
+            <HoverBorderGradient
+              as="a"
+              href="/resume-ali-abdiyev-en.pdf"
+              download="Ali-Abdiyev-Resume.pdf"
+              containerClassName="rounded-lg"
+              className="flex items-center gap-2 text-sm font-medium"
+            >
+              <Download className="h-4 w-4" />
+              <span>Download Resume</span>
+            </HoverBorderGradient>
+
+            <Button variant="outline" size="default" asChild>
+              <a
+                href="/resume-ali-abdiyev-en.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <FileText className="h-4 w-4" />
+                View Resume
+              </a>
+            </Button>
+          </div>
         </div>
 
         {/* Contact Cards */}
@@ -141,7 +170,7 @@ export function ContactSection() {
                 as="a"
                 href="mailto:aliabdiyev000@gmail.com"
                 borderRadius="0.75rem"
-                className="text-sm font-medium h-auto px-6"
+                className="text-sm font-medium h-12 px-6"
                 containerClassName="sm:w-auto w-full"
               >
                 <Mail className="h-4 w-4 mr-2" />

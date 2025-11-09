@@ -15,7 +15,7 @@ export const GlowingStarsBackgroundCard = ({
     <div
       onMouseEnter={() => setMouseEnter(true)}
       onMouseLeave={() => setMouseEnter(false)}
-      className={`relative bg-[linear-gradient(110deg,#333_0.6%,#222)] p-4 h-full rounded-xl border border-[#2a2a2a] ${className}`}
+      className={`relative bg-card p-4 h-full rounded-xl border border-border ${className}`}
     >
       <div className="relative z-10">{children}</div>
       <Illustration mouseEnter={mouseEnter} />
@@ -79,7 +79,7 @@ export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
                 stroke="none"
                 strokeWidth="0"
                 fill="currentColor"
-                className="text-[#2a2a2a]"
+                className="text-muted-foreground/20"
               />
             </svg>
           </div>
@@ -106,7 +106,7 @@ const Star = ({ isGlowing, delay }: { isGlowing: boolean; delay: number }) => {
         strokeWidth="0"
         fill="currentColor"
         className={`${
-          isGlowing ? "text-blue-500" : "text-[#2a2a2a]"
+          isGlowing ? "text-primary" : "text-muted-foreground/20"
         } transition-all duration-500`}
         style={{
           animationDelay: `${delay}s`,
@@ -119,11 +119,10 @@ const Star = ({ isGlowing, delay }: { isGlowing: boolean; delay: number }) => {
 const Glow = ({ delay }: { delay: number }) => {
   return (
     <div
-      className="absolute inset-0 m-auto h-4 w-4 rounded-full bg-blue-500/30 blur-md animate-pulse"
+      className="absolute inset-0 m-auto h-4 w-4 rounded-full bg-primary/30 blur-md animate-pulse"
       style={{
         animationDelay: `${delay}s`,
       }}
     />
   );
 };
-
