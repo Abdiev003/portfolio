@@ -41,14 +41,23 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
    - Achievement metrics
    - Company information
 
-3. **Skills Section**
+3. **Experience Timeline**
+   - Professional work history with detailed descriptions
+   - Interactive timeline with alternating layout
+   - Company links and location information
+   - Technologies used for each role
+   - Animated timeline dots and cards
+   - Experience statistics summary
+   - LinkedIn profile link
+
+4. **Skills Section**
    - Tabbed interface for different tech stacks
    - Frontend, Backend, Database, DevOps categories
    - Skill level indicators (Expert/Advanced/Intermediate)
    - Bento grid for services
    - Hover effects and animations
 
-4. **GitHub Stats & Activity**
+5. **GitHub Stats & Activity**
    - Real-time GitHub statistics (Stars, Forks, Repos, Followers)
    - GitHub contribution stats card
    - Most used languages chart
@@ -56,20 +65,20 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
    - Direct link to GitHub profile
    - Animated stat cards with smooth transitions
 
-5. **Projects Section**
+6. **Projects Section**
    - 3D card effects
    - Featured projects showcase
    - GitHub and live demo links
    - Tech stack tags
    - Show more/less functionality
 
-6. **Contact Section**
+7. **Contact Section**
    - Moving border button for email
    - Multiple contact methods
    - Social media integration
    - Professional CTA card
 
-7. **Navigation**
+8. **Navigation**
    - Sticky navbar with glassmorphism
    - Mobile-responsive menu
    - Smooth scroll behavior
@@ -150,6 +159,7 @@ portfolio/
     │   │   ├── sections/           # Page sections
     │   │   │   ├── hero-section.tsx
     │   │   │   ├── about-section.tsx
+    │   │   │   ├── experience-section.tsx
     │   │   │   ├── skills-section.tsx
     │   │   │   ├── github-section.tsx
     │   │   │   ├── projects-section.tsx

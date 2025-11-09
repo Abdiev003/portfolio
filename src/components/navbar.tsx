@@ -2,7 +2,15 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, Home, User, Code, FolderGit2, Mail } from "lucide-react";
+import {
+  Menu,
+  Home,
+  User,
+  Code,
+  FolderGit2,
+  Mail,
+  Briefcase,
+} from "lucide-react";
 
 import { CursorToggle } from "@/components/cursor-toggle";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -20,6 +28,7 @@ import { Separator } from "@/components/ui/separator";
 const navItems = [
   { name: "Home", href: "#home", icon: Home },
   { name: "About", href: "#about", icon: User },
+  { name: "Experience", href: "#experience", icon: Briefcase },
   { name: "Skills", href: "#skills", icon: Code },
   { name: "GitHub", href: "#github", icon: FolderGit2 },
   { name: "Projects", href: "#projects", icon: FolderGit2 },

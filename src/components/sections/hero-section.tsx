@@ -58,7 +58,7 @@ export function HeroSection() {
             Digital Solutions Architect
           </h2>
           <TextGenerateEffect
-            words="Transforming ideas into high-performance digital experiences. Full-Stack Developer specializing in building robust and scalable web applications with modern technologies."
+            words="22-year-old software engineer with 4+ years of experience building exceptional digital solutions. Co-Founder of Quberts Technologies, specializing in full-stack development with React, Next.js, Node.js, and modern cloud technologies."
             className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           />
         </div>

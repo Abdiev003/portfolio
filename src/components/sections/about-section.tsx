@@ -41,8 +41,9 @@ export function AboutSection() {
             Crafting Digital Excellence
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Passionate software developer with a focus on creating robust and
-            scalable web applications using cutting-edge technologies.
+            21-year-old software engineer with 6+ years of hands-on experience
+            in building robust and scalable web applications using cutting-edge
+            technologies.
           </p>
         </div>
 
@@ -63,7 +64,7 @@ export function AboutSection() {
                 ideas into high-performance digital experiences.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                As Co-Founder of{" "}
+                As Founder of{" "}
                 <a
                   href="https://quberts.com"
                   target="_blank"
@@ -71,10 +72,11 @@ export function AboutSection() {
                   className="text-primary hover:underline font-medium"
                 >
                   Quberts Technologies
-                </a>
-                , I specialize in full-stack development, API design, cloud
-                architecture, and DevOps practices. My approach combines
-                technical excellence with user-centric design principles.
+                </a>{" "}
+                (incorporated in the United Kingdom), I specialize in full-stack
+                development, API design, cloud architecture, and DevOps
+                practices. My approach combines technical excellence with
+                user-centric design principles.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 For me, clean code, transparent communication, and continuous
@@ -114,7 +116,7 @@ export function AboutSection() {
                   4+
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Years Remote Experience
+                  Years of Experience
                 </p>
               </div>
               <div className="group cursor-default">
@@ -127,10 +129,10 @@ export function AboutSection() {
               </div>
               <div className="group cursor-default">
                 <div className="text-3xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">
-                  100%
+                  979+
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Client Satisfaction
+                  LinkedIn Followers
                 </p>
               </div>
             </div>
