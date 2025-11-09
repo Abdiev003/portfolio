@@ -23,6 +23,7 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
 - **shadcn/ui**: 40+ beautifully designed components
 - **Dark/Light Mode**: Seamless theme switching with next-themes
 - **Custom Cursor**: Animated cursor with particle trail effects (toggleable)
+- **Ambient Music Player**: Floating music player with 6 ambient sounds (Rain, Ocean, Forest, Cafe, Fire, Night)
 - **Smooth Animations**: Framer Motion powered transitions
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
 
@@ -84,6 +85,15 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
    - Smooth scroll behavior
    - Theme toggle integration
 
+9. **Ambient Music Player**
+   - Floating button in bottom-right corner
+   - 6 ambient sound options (Rain, Ocean, Forest, Cafe, Fire, Night)
+   - Volume control with slider
+   - Play/Pause functionality
+   - Persistent settings (localStorage)
+   - Loading states and error handling
+   - Smooth panel animations
+
 ### 🛠️ Tech Stack
 
 #### Frontend
@@ -99,6 +109,9 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
 - **Aceternity UI** - Premium animated components
 - **Radix UI** - Headless UI primitives
 - **Lucide React** - Icon library
+
+#### State Management
+- **Zustand** - For custom cursor toggle state and music player state
 
 #### Development Tools
 - **Biome** - Fast linter and formatter
@@ -167,12 +180,17 @@ portfolio/
 │   │   ├── navbar.tsx
 │   │   ├── footer.tsx
 │   │   ├── theme-provider.tsx
-│   │   └── theme-toggle.tsx
+│   │   ├── theme-toggle.tsx
+│   │   ├── music-player.tsx
+│   │   ├── cursor-provider.tsx
+│   │   └── cursor-toggle.tsx
+│   ├── hooks/
+│   │   ├── use-music-player.ts
+│   │   └── use-cursor-toggle.ts
 │   └── lib/
 │       └── utils.ts            # Utility functions
 ├── public/                     # Static assets
-│   ├── resume-ali-abdiyev-en.pdf  # Resume (English)
-│   └── README-CV.md            # CV upload instructions
+│   └── resume-ali-abdiyev-en.pdf  # Resume (English)
 ├── components.json             # shadcn/ui config
 ├── tailwind.config.js          # Tailwind configuration
 ├── tsconfig.json               # TypeScript config

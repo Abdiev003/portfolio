@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import { CursorProvider } from "@/components/cursor-provider";
+import { MusicPlayer } from "@/components/music-player";
 
 import "./globals.css";
 
@@ -60,15 +61,16 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <CursorProvider />
-          {children}
-        </ThemeProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <CursorProvider />
+            <MusicPlayer />
+            {children}
+          </ThemeProvider>
       </body>
     </html>
   );
