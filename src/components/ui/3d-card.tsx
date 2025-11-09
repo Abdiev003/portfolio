@@ -80,12 +80,7 @@ export const CardBody = ({
   className?: string;
 }) => {
   return (
-    <div
-      className={cn(
-        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
-        className
-      )}
-    >
+    <div className={cn("h-96 w-96 transform-3d *:transform-3d", className)}>
       {children}
     </div>
   );
@@ -103,8 +98,8 @@ export const CardItem = ({
   rotateZ = 0,
   ...rest
 }: {
-  as?: React.ElementType;
-  children: React.ReactNode;
+  as?: any;
+  children?: React.ReactNode;
   className?: string;
   translateX?: number | string;
   translateY?: number | string;
@@ -148,4 +143,3 @@ export const useMouseEnter = () => {
   }
   return context;
 };
-

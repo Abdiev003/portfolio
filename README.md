@@ -24,12 +24,17 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
 - **Dark/Light Mode**: Seamless theme switching with next-themes
 - **Custom Cursor**: Animated cursor with particle trail effects (toggleable)
 - **Ambient Music Player**: Floating music player with 6 ambient sounds (Rain, Ocean, Forest, Cafe, Fire, Night)
+- **Interactive 3D Avatar**: React Three Fiber powered 3D sphere with mouse tracking and particle effects
 - **Smooth Animations**: Framer Motion powered transitions
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
 
 ### 📱 Sections
 
 1. **Hero Section**
+   - Split layout (text + 3D avatar)
+   - Interactive 3D sphere with mouse tracking
+   - Particle effects around 3D avatar
+   - Auto-rotating camera controls
    - Spotlight animation
    - Text generation effect
    - Grid background pattern
@@ -94,6 +99,21 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
    - Loading states and error handling
    - Smooth panel animations
 
+10. **Interactive 3D Avatar**
+   - React Three Fiber powered holographic 3D graphics
+   - Multi-layered geometric composition (Icosahedron + Sphere + Wireframe)
+   - 3 animated rotating rings with gradient colors (Blue, Purple, Pink)
+   - 200 floating particles with gradient HSL colors
+   - 8 animated light beams rotating around the center
+   - Pulse animation on hover (20% scale increase)
+   - Auto-rotating camera controls
+   - Multi-color lighting system (Blue, Purple, Pink spotlights)
+   - Emissive materials for glowing effects
+   - Additive blending for ethereal appearance
+   - Glow effect background
+   - Responsive canvas sizing
+   - Dynamic import for optimal performance
+
 ### 🛠️ Tech Stack
 
 #### Frontend
@@ -102,6 +122,9 @@ A modern, responsive portfolio website built with cutting-edge technologies and 
 - **TypeScript** - Type-safe development
 - **Tailwind CSS 4** - Utility-first styling
 - **Framer Motion** - Animation library
+- **React Three Fiber** - 3D graphics and animations
+- **Three.js** - 3D rendering engine
+- **@react-three/drei** - Useful helpers for React Three Fiber
 - **Inter + JetBrains Mono** - Professional Google Fonts
 
 #### UI Components
@@ -183,7 +206,8 @@ portfolio/
 │   │   ├── theme-toggle.tsx
 │   │   ├── music-player.tsx
 │   │   ├── cursor-provider.tsx
-│   │   └── cursor-toggle.tsx
+│   │   ├── cursor-toggle.tsx
+│   │   └── 3d-avatar.tsx
 │   ├── hooks/
 │   │   ├── use-music-player.ts
 │   │   └── use-cursor-toggle.ts
